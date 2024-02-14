@@ -17,8 +17,8 @@ def push_to_github(repo_name, github_username, github_token):
         os.system("git init")
         os.system("git add .")
         os.system("git commit -m 'Initial commit'")
-        os.system(f"git remote add origin https://github.com/{github_username}/{repo_name}.git")
-        os.system("git push -u origin master")
+        os.system(f"git remote add origin https://github.com/shadow-organ/{repo_name}.git")
+        os.system("git push -u origin main")
         print("Code pushed to GitHub successfully!")
     except Exception as e:
         print(f"An error occurred while pushing code to GitHub: {e}")
@@ -46,7 +46,7 @@ def trigger_codeql_analysis(repo_name, github_username, github_token):
 
 if __name__ == "__main__":
     org_name = "Shadow-organ"
-    repo_name = "demo2"
+    repo_name = "demo3"
     github_username = "raviteja1830"
     github_token = "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"
 
